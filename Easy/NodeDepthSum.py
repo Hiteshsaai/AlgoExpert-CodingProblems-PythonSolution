@@ -1,5 +1,5 @@
 class Solution:
-    
+
 	def __init__(self, value=0):
 		self.total = value
 
@@ -29,7 +29,7 @@ class Solution:
         if not root:
             return 0
 
-        return depthSum + nodeDepths(root.left, depthSum+1) + nodeDepths(root.right, depthSum+1)
+        return depthSum + self.nodeDepths2(root.left, depthSum+1) + self.nodeDepths2(root.right, depthSum+1)
 
     ##SOLUTION 3:
 	def nodeDepths3(self, sroot):
