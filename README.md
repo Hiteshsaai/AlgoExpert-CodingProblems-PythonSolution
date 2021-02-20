@@ -1,4 +1,4 @@
-# AlgoExpert Coding Problems Python Solutions
+# AlgoExpert Coding Problems Solutions using Python
 
 - Started using AlgoExpert to solve Coding Problems. <br>
 - Completed Easy Category.
