@@ -6,7 +6,7 @@ class BST:
 
     def insert(self, value):
         # Do not edit the return statement of this method.
-		currNode = self
+		currNode = self ## ROOT Node/Current Node
 		while True:
 			if value < currNode.value:
 				if currNode.left is None:
@@ -23,7 +23,7 @@ class BST:
 		return self
 	
     def contains(self, value):
-		currNode = self
+		currNode = self ## ROOT Node/Current Node
 		while currNode is not None:
 			if value > currNode.value:
 				currNode = currNode.right
