@@ -6,8 +6,10 @@ class LinkedList:
 
 
 class Solution:
-    def removeKthNodeFromEnd(self, head, k):
-        # Time O(n) || Space O(n)
+
+    ## SOLUTION 1:
+    def removeKthNodeFromEnd1(self, head, k):
+        # Time O(n) || Space O(1)
         first = head
         second = head
         counter = 1
@@ -26,3 +28,26 @@ class Solution:
 
         first.next = first.next.next
         return
+
+    ##SOLUTION 2:
+    def removeKthNodeFromEnd2(self, head, k):
+        # Time O(n) || Space O(n)
+        node = head
+        array = []
+        while node is not None:
+            array.append(node.value)
+            node = node.next
+
+        nodeToDelete = array[-k]
+
+        if head.value == nodeToDelete:
+            head.value = head.next.value
+            head.next = head.next.next
+            return
+
+        while head.next is not None:
+            if head.next.value == nodeToDelete:
+                head.next = head.next.next
+                return
+            else:
+                head = head.next
