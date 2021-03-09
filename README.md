@@ -1,6 +1,6 @@
-# AlgoExpert Coding Problems Solutions using Python
+# AlgoExpert Coding Problems Python Solution
 
-- Started using AlgoExpert to solve Coding Problems. <br>
+- Started using AlgoExpert to solve challening coding questions. <br>
 - Completed Easy Category.
-- Started solving with Midium Category problems.
-- Weekly I will be solving 10 to 15 Problems.
+- Started solving with Medium Category problems.
+- Weekly I will be solving 10 to 15 Problems and posting solutions for each questions with different time/space complexity from worst to best.
