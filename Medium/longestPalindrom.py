@@ -6,13 +6,13 @@ class Solution:
             return string
 
         maxLen = float("-inf")
-        idxOfPalindrom = [None, None]  # Space O(2)
+        idxOfPalindrom = [None, None]  # Space O(2) --> Space O(1) [constant]
 
         ptr1 = 0
         ptr2 = 0
 
-        for ptr1 in range(0, len(string)):  # O(n)
-            for ptr2 in range(ptr1, len(string)):  # O(n) --> O(n*n)
+        for ptr1 in range(0, len(string)):  # Time O(n)
+            for ptr2 in range(ptr1, len(string)):  # Time O(n) --> O(n*n)
                 if string[ptr1] == string[ptr2]:
                     if self.checkPalindrom(ptr1, ptr2, string):
                         if maxLen < (ptr2 - ptr1) + 1:
@@ -26,7 +26,7 @@ class Solution:
 
         return string[idxOfPalindrom[0] : idxOfPalindrom[1]]
 
-    def checkPalindrom(self, left, right, string):
+    def checkPalindrom(self, left, right, string):  # Time O(n)
 
         while left <= right:
 
