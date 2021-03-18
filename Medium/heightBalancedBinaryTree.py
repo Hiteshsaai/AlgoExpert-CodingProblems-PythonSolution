@@ -14,6 +14,7 @@ class TreeInfo:
 class Solution:
     def heightBalancedBinaryTree(self, tree):
         # Time O(n) || Space O(n) n - number of nodes in the tree
+
         if not tree:
             return True
         treeInfo = TreeInfo()
