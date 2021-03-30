@@ -26,7 +26,8 @@ class Solution:
 
     ## SOLUTION 2: RECOMMENDED
     def fourNumberSum2(self, array, targetSum):
-        # Time O(n^3) || Space O(n^2)
+        # Average case: Time O(n^2) || Space O(n^2)
+        # Worst case:Time O(n^3) || Space O(n^2)
         allPairSum = {}
         res = []
         for i in range(1, len(array) - 1):
