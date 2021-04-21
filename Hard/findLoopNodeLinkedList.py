@@ -6,10 +6,9 @@ class Solution:
             self.value = value
             self.next = None
 
-    def findLoop(head):
+    def findLoop(self, head):
         ## Time O(n) || Space O(1)
         if head:
-            node1, node2 = head, head
             slow = head.next
             fast = head.next.next
             while True:
