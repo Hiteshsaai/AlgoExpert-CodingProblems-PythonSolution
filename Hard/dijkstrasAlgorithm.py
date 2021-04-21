@@ -64,3 +64,5 @@ if __name__ == "__main__":
             ],
         )
     )
+
+    print(Solution().dijkstrasAlgorithm(1, [[[1, 2]], [[0, 1]], [[3, 1]], [[2, 2]]]))
